@@ -1,4 +1,41 @@
-header {
-    color: white;
-    background-color: #000;
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container  {
+    padding: 0px 50px;
+}
+
+.header-row-1, .header-row-2 {
+    display: flex;
+    width: 100%;
+}
+
+.header-navigation a,
+ .menu a,
+ .phone-text a{
+     display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation-items {
+    display: flex;
+    
+}
+
+.header-lk a{
+    display: block;
+}
+
+.ikon {
+    width: 25px;
+    height: 25px;
 }
