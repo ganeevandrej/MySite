@@ -1,0 +1,275 @@
+:root {
+    --primary-font-family: 'Montserrat', sans-serif;
+    --primary-color: #333;
+    --primary-background: #f7f7f7;
+  }
+
+body {
+    font-family: var(--primary-font-family);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, .section-main {
+    background-color: var(--primary-background);
+}
+
+.container {
+    padding: 0 40px;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-row: auto auto;
+}
+
+.header-menu {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+}
+
+.button-menu {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: var(--primary-background);
+    font-family: var(--primary-font-family);
+    font-size: 22px;
+    
+}
+
+.button-menu span {
+    margin-left: 10px;
+}
+
+.header-logo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+
+.logo-content {
+    padding-top: 5px;
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.flex-container,
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-content img,
+.footer-logo img {
+    width: 90px;
+    height: 72px;
+}
+
+.footer-logo span {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.header-controls {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.controls-item,
+.network-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-controls div,
+.header-controls a,
+.network-item {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+}
+
+.header-controls a:last-child {
+    margin-right: 0;
+}
+
+.Search {
+    padding: 0;
+    border: none;
+    background-color: var(--primary-background);
+}
+
+.header-collections {
+    grid-column: 1/4;
+    border-top: 1px solid #ccc;
+    
+}
+
+.collections-items {
+   margin: 15px 0 10px;
+   display: flex;
+   justify-content: center; 
+}
+
+.collections-items a{
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
+    color: var( --primary-color);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-network {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.network-items {
+    display: flex;
+    justify-content: center;
+}
+
+.popular-title {
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.popular {
+    display: flex;
+}
+
+.popular-item-wrapper {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-right: 16px;
+}
+
+.popular-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.popular-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 5px;
+    top: 5px;
+    background: url('/accets/ikon/icon-heart.png') no-repeat;
+}
+
+.main-popular {
+    padding-bottom: 10px;
+}
+
+.popular-item img {
+    border-radius: 10px;
+}
+
+.popular-item span {
+    padding: 10px 0 5px;
+}
+
+.item-price {
+    font-weight: 700;
+}
+
+.popular-item:last-child {
+    margin-right: 0;
+}
+
+.item-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-ikon {
+    padding: 0;
+    background-color: var(--primary-background);
+    border: none;
+}
+
+.item-ikon img{
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+}
+
+.product-sections {
+    padding-bottom: 10px;
+}
+
+.product-sections span {
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    font-size: 24px;
+}
+
+.sections-banners {
+    display: flex;
+}
+
+.banner-1 {
+    display: block;
+    position: relative;
+    width: 635px;
+    height: 750px;
+    background: url('/accets/image/banner-1.jpg') no-repeat;
+    background-size: 635px auto;
+}
+.banner-2 {
+    display: block;
+    position: relative;
+    width: 634px;
+    height: 750px;
+    background: url('/accets/image/banner-2.jpg') no-repeat;
+    background-size: 634px auto;
+}
+
+.banner-text {
+    position: absolute;
+    width: 100%;
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: rgba(204, 204, 204, 0.3);
+    left: 0;
+    bottom: 0;
+    font-size: 22px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.banner-text:hover {
+    font-weight: 600;
+    background-color: rgba(204, 204, 204, 0.8);
+}
