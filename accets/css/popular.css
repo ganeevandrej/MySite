@@ -1,0 +1,77 @@
+:root {
+    --primary-font-family: 'Montserrat', sans-serif;
+    --primary-color: #333;
+    --primary-background: #f7f7f7;
+}
+
+.popular-title {
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.popular {
+    display: flex;
+}
+
+.popular-item-wrapper {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-right: 16px;
+}
+
+.popular-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.popular-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 5px;
+    top: 5px;
+    background: url('/accets/ikon/icon-heart.png') no-repeat;
+}
+
+.main-popular {
+    padding-bottom: 10px;
+}
+
+.popular-item img {
+    border-radius: 10px;
+}
+
+.popular-item span {
+    padding: 10px 0 5px;
+}
+
+.item-price {
+    font-weight: 700;
+}
+
+.popular-item:last-child {
+    margin-right: 0;
+}
+
+.item-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-ikon {
+    padding: 0;
+    background-color: var(--primary-background);
+    border: none;
+}
+
+.item-ikon img{
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+}

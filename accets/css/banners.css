@@ -1,0 +1,55 @@
+:root {
+    --primary-font-family: 'Montserrat', sans-serif;
+    --primary-color: #333;
+    --primary-background: #f7f7f7;
+}
+ 
+ .product-sections {
+     padding-bottom: 10px;
+ }
+ 
+ .product-sections span {
+     text-align: center;
+     padding: 20px 0;
+     display: block;
+     font-size: 24px;
+ }
+ 
+ .sections-banners {
+     display: flex;
+ }
+ 
+ .banner-1 {
+     display: block;
+     position: relative;
+     width: 635px;
+     height: 750px;
+     background: url('/accets/image/banner-1.jpg') no-repeat;
+     background-size: 635px auto;
+ }
+ .banner-2 {
+     display: block;
+     position: relative;
+     width: 634px;
+     height: 750px;
+     background: url('/accets/image/banner-2.jpg') no-repeat;
+     background-size: 634px auto;
+ }
+ 
+ .banner-text {
+     position: absolute;
+     width: 100%;
+     text-decoration: none;
+     color: var(--primary-color);
+     background-color: rgba(204, 204, 204, 0.3);
+     left: 0;
+     bottom: 0;
+     font-size: 22px;
+     padding: 10px 0;
+     text-align: center;
+ }
+ 
+ .banner-text:hover {
+     font-weight: 600;
+     background-color: rgba(204, 204, 204, 0.8);
+ }

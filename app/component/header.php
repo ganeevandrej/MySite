@@ -1,43 +1,9 @@
-<div class="navbar" id="navbar"></div>
-<div class="close" id="close">
-    <img src="/accets/ikon/close.png">
-</div>
-<div class="navigation" id="navigation">
-    <div class="container">
-        <div class="nav-container">
-            <div class="nav-wrap">
-                <div class="nav-title">
-                    <h2>Меню</h2>
-                </div>
-            </div>
-            <div class="nav-wrap">
-                <h3>Верхнее меню</h3>
-                <ul>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Оплата</a></li>
-                    <li><a href="#">Личный кабинет</a></li>
-                </ul>
-            </div>
-            <div class="nav-wrap">
-                <h3>Контакты</h3>
-                <span>+7 (932) 539-11-23</span>
-                <span>г.Москва, ул. 800-Летия Москвы, кр1, д28</span>
-            </div>
-            <div class="nav-wrap">
-                <ul>
-                    <li><img href="#"></img></li>
-                    <li><img href="#"></img></li>
-                    <li><img href="#"></img></li>
-                    <li><img href="#"></img></li>
-                    <li><img href="#"></img></li>
-                    <li><img href="#"></img></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<?php include('app/component/form-login.php'); ?>
+<?php include('app/component/nav-burger.php'); ?>
+<div class="wrap openForm">
+    <form class="form-search" action="index.php">
+            <input name="search" id="search" type="text">
+    </form>
 </div>
 <header>
     <div class="section-container">
@@ -50,7 +16,7 @@
                     </button>
                 </div>
                 <div class="header-logo">
-                    <a class="logo-content" href="#">
+                    <a class="logo-content" href="index.php">
                         <div class="flex-container">
                             <img src="accets/ikon/logo.png">
                             <span>Stories</span>
@@ -58,11 +24,9 @@
                     </a>
                 </div>
                 <div class="header-controls">
-                    <div class="controls-item">
-                        <button class="Search">
-                            <img src="accets/ikon/premium-icon.png">
-                        </button>
-                    </div>
+                    <button class="Search">
+                        <img src="accets/ikon/premium-icon.png">
+                    </button>
                     <a class="controls-item" href="#">
                         <img src="accets/ikon/icon-comparison.png">
                     </a>
@@ -72,11 +36,9 @@
                     <a class="controls-item" href="#">
                         <img src="accets/ikon/icon-shopping.png">
                     </a>
-                </div>
-                <div class="header-collections">
-                    <div class="collections-items">
-                        <a href="#">Мужчинам</a>
-                        <a href="#">Женщинам</a>
+                    <div class="controls-auth">
+                        <button id="login">Войти</button>
+                        <a href="registration.php">Зарегестрироваться</a>
                     </div>
                 </div>
             </div>
