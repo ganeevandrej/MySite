@@ -5,6 +5,11 @@ const navigation = document.querySelector("#navigation");
 const login = document.querySelector("#login");
 const wraper = document.querySelector("#wraper");
 const formLogin = document.querySelector("#form-login");
+const Search = document.querySelector("#Search");
+const formSearch = document.querySelector("#search-input");
+const logo = document.querySelector("#header-logo");
+
+console.log(logo);
 
 const openMenu = (e) => {
     e.preventDefault();
@@ -13,8 +18,19 @@ const openMenu = (e) => {
     close.classList.add("closes");
 }
 
-const openlogin = (e) => {
-    console.log(formLogin);
+const openSearch = (e) => {
+    e.preventDefault();
+    if(Search.classList.toggle("openSearch")) {
+        formSearch.classList.add("openSearch");
+        logo.style.display = 'none';
+    }
+    else {
+        formSearch.classList.remove("openSearch");
+        logo.style.display = '';
+    }
+}
+
+const openLogin = (e) => {
     e.preventDefault();
     formLogin.classList.add("login");
     wraper.classList.add("login");
@@ -24,7 +40,6 @@ document.addEventListener("click", (e) => {
     const clickNavbar = e.composedPath().includes(navbar);
     const closes = e.composedPath().includes(close);
     const isWraper = e.composedPath().includes(wraper);
-    console.log(isWraper);
     
     if(clickNavbar ||  closes) {
         navbar.classList.remove("open");
@@ -38,4 +53,5 @@ document.addEventListener("click", (e) => {
 })
 
 buttonMenu.addEventListener("click", openMenu);
-login.addEventListener("click", openlogin);
+login.addEventListener("click", openLogin);
+Search.addEventListener("click", openSearch);

@@ -1,10 +1,5 @@
 <?php include('app/component/form-login.php'); ?>
 <?php include('app/component/nav-burger.php'); ?>
-<div class="wrap openForm">
-    <form class="form-search" action="index.php">
-            <input name="search" id="search" type="text">
-    </form>
-</div>
 <header>
     <div class="section-container">
         <div class="container">
@@ -16,7 +11,7 @@
                     </button>
                 </div>
                 <div class="header-logo">
-                    <a class="logo-content" href="index.php">
+                    <a class="logo-content" href="index.php" id="header-logo">
                         <div class="flex-container">
                             <img src="accets/ikon/logo.png">
                             <span>Stories</span>
@@ -24,9 +19,15 @@
                     </a>
                 </div>
                 <div class="header-controls">
-                    <button class="Search">
-                        <img src="accets/ikon/premium-icon.png">
-                    </button>
+                    <div class="header-search">
+                        <form class="form-search" id="search-input">
+                            <input type="text" placeholder="Поиск">
+                        </form>
+                        <button class="Search" id="Search">
+                            <span class="searching"></span>
+                            <img class="ikon-close" src="/accets/ikon/close.png">
+                        </button>
+                    </div>
                     <a class="controls-item" href="#">
                         <img src="accets/ikon/icon-comparison.png">
                     </a>
