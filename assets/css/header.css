@@ -196,10 +196,6 @@ header {
     left: -100%;
 }
 
-.form-item {
-    padding: 10px 0;
-}
-
 .form-item span{
     font-size: 22px;
 }
@@ -226,5 +222,5 @@ header {
     display: block;
     width: 24px;
     height: 24px;
-    background: url('/accets/ikon/premium-icon.png') no-repeat;
+    background: url('/assets/ikon/premium-icon.png') no-repeat;
 }

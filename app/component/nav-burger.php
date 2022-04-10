@@ -1,6 +1,6 @@
 <div class="navbar" id="navbar"></div>
 <div class="close" id="close">
-    <img src="/accets/ikon/close.png">
+    <img src="/assets/ikon/close.png">
 </div>
 <div class="navigation" id="navigation">
     <div class="nav-container">
@@ -29,11 +29,11 @@
         </div>
         <div class="nav-wrap">
             <ul class="image-ikons">
-                <li><img src="accets/ikon/icon-instagram.png"></li>
-                <li><img src="accets/ikon/icon-telegram.png"></img></li>
-                <li><img src="accets/ikon/icon-facebook.png"></img></li>
-                <li><img src="accets/ikon/icon-vk.png"></img></li>
-                <li><img src="accets/ikon/youtube.png"></img></li>
+                <li><img src="assets/ikon/icon-instagram.png"></li>
+                <li><img src="assets/ikon/icon-telegram.png"></img></li>
+                <li><img src="assets/ikon/icon-facebook.png"></img></li>
+                <li><img src="assets/ikon/icon-vk.png"></img></li>
+                <li><img src="assets/ikon/youtube.png"></img></li>
             </ul>
         </div>
     </div>

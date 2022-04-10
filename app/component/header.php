@@ -6,14 +6,14 @@
             <div class="header-content">
                 <div class="header-menu">
                     <button class="button-menu" id="buttonMenu">
-                        <img src="accets/ikon/icon-menu.png">
+                        <img src="assets/ikon/icon-menu.png">
                         <span>Меню</span>
                     </button>
                 </div>
                 <div class="header-logo">
                     <a class="logo-content" href="index.php" id="header-logo">
                         <div class="flex-container">
-                            <img src="accets/ikon/logo.png">
+                            <img src="assets/ikon/logo.png">
                             <span>Stories</span>
                         </div>
                     </a>
@@ -25,17 +25,17 @@
                         </form>
                         <button class="Search" id="Search">
                             <span class="searching"></span>
-                            <img class="ikon-close" src="/accets/ikon/close.png">
+                            <img class="ikon-close" src="/assets/ikon/close.png">
                         </button>
                     </div>
                     <a class="controls-item" href="#">
-                        <img src="accets/ikon/icon-comparison.png">
+                        <img src="assets/ikon/icon-comparison.png">
                     </a>
                     <a class="controls-item" href="#">
-                        <img src="accets/ikon/icon-heart.png">
+                        <img src="assets/ikon/icon-heart1.png">
                     </a>
                     <a class="controls-item" href="#">
-                        <img src="accets/ikon/icon-shopping.png">
+                        <img src="assets/ikon/icon-shopping.png">
                     </a>
                     <div class="controls-auth">
                         <button id="login">Войти</button>

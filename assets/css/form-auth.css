@@ -21,10 +21,11 @@
     padding: 10px;
     border-radius: 5%;
     width: 500px;
+    height: auto;
 }
 
 .form-item {
-    padding: 10px 0;
+    margin: 10px 0;
 }
 
 .form-item span{
@@ -50,7 +51,7 @@
     color: #f7f7f7;
 }
 
-.form-item:nth-child(7) {
+.form-item:nth-child(9) {
     display: flex;
     align-self: flex-start;
     align-items: center;
@@ -58,10 +59,26 @@
     padding: 5px 0;
 }
 
-.form-item:nth-child(7) input {
+.err {
+    border: 1px solid red;
+    color: red;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.success {
+    border: 1px solid green;
+    color: green;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.form-item:nth-child(9) input {
     width: 15px;
     height: 15px;
 }
-.form-item:nth-child(7) label {
+.form-item:nth-child(9) label {
     font-size: 14px;
 }
