@@ -53,5 +53,7 @@ document.addEventListener("click", (e) => {
 })
 
 buttonMenu.addEventListener("click", openMenu);
-login.addEventListener("click", openLogin);
+if(login){
+    login.addEventListener("click", openLogin);
+}
 Search.addEventListener("click", openSearch);

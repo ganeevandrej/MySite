@@ -1,8 +1,15 @@
 <div class="form">
     <form class="form-auth" method="post" name="form-auth" action="registration.php">
         <div class="form-item"><span>Регистрация</span></div>
-        <div class="form-item success"><?=$successfully?></div>
+        <?php if(strlen($successfully) > 0):?>
+        <div class="form-item success">
+            <?=$successfully?>
+            <?=$help?>
+        </div>
+        <?php endif;?>
+        <?php if(strlen($errMsg) > 0):?>
         <div class="form-item err"><?=$errMsg?></div>
+        <?php endif;?>
         <div class="form-item"><input name="email" value='<?=$email?>' type="text" placeholder="Введите email"></div>
         <div class="form-item"><input name="login" value='<?=$login?>' type="text" placeholder="Введите login"></div>
         <div class="form-item"><input name="phone" type="text" placeholder="Введите номер телефона"></div>

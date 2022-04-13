@@ -37,10 +37,22 @@
                     <a class="controls-item" href="#">
                         <img src="assets/ikon/icon-shopping.png">
                     </a>
-                    <div class="controls-auth">
-                        <button id="login">Войти</button>
-                        <a href="registration.php">Зарегестрироваться</a>
-                    </div>
+                    <?php if(isset($_SESSION['id'])): ?>
+                        <div class="user-auth">
+                            <a class="user" href="#">
+                                <?=$_SESSION['login'];?>
+                            </a>
+                            <ul class="user-panel">
+                                <li><a href="#">Настройки</a></li>
+                                <li><a href="app/component/logout.php">Выход</a></li>
+                            </ul>
+                        </div>
+                        <?php else:?>
+                        <div class="controls-auth">
+                            <button class="button-in" id="login">Войти</button>
+                            <a class="regist" href="registration.php">Зарегестрироваться</a>
+                        <?php endif;?>
+                        </div>
                 </div>
             </div>
         </div>

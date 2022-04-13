@@ -51,7 +51,7 @@
     color: #f7f7f7;
 }
 
-.form-item:nth-child(9) {
+.form-item.rememberMe {
     display: flex;
     align-self: flex-start;
     align-items: center;
@@ -73,12 +73,13 @@
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
+    text-align: center;
 }
 
-.form-item:nth-child(9) input {
+.form-item.rememberMe > .rememberMe-input {
     width: 15px;
     height: 15px;
 }
-.form-item:nth-child(9) label {
+.form-item.rememberMe label {
     font-size: 14px;
 }

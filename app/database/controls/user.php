@@ -1,10 +1,11 @@
 <?php
 include('app/database/db.php');
 
+$help = 'Авторизируйтесь в системе!';
 $errMsg = '';
 $successfully = '';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['button-reg'])) {
     $login = trim($_POST['login']);
     $email = trim($_POST['email']);
     $phone = trim($_POST['phone']);
@@ -32,23 +33,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'admin' => $admin
             ];
             $id = insert('users', $post);
-            tt(selectOne('users', ['id' => $id]));
             $successfully = "Пользователь $login успешно зарегестрировался";
         }
-        
     }
 } else {
     $login = '';
     $email = '';
 }
 
-if (isset($_POST['login'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['button-log'])) {
+    $email = trim($_POST['email']);
+    $passwordE = trim($_POST['password']);
 
-
-
-
-
-    // $id = insert('users', $post);
-    // $lust_row = selectOne('users', ['id'=> $id]);
-    // tt($lust_row);
+    if ($email === '' || $passwordE === '') {
+        $errMsg = "Заполните все обязательные поля!";
+    }
+    else {
+        $exinstence = selectOne('users', ['email' => $email]);
+        if($exinstence && password_verify($passwordE ,$exinstence['password'])) {
+            $_SESSION['id'] = $exinstence['id'];
+            $_SESSION['login'] = $exinstence['login'];
+            header('location: ' . 'index.php');
+        }else{
+            $errMsg = "Email или пороль не верный!";
+        }
+    }
+}
+else{
+    $email = '';
 }

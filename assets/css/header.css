@@ -141,10 +141,6 @@ header {
     display: block;
 }
 
-.controls-item:nth-child(4) {
-    padding-right: 0;
-}
-
 .controls-auth {
     text-align: center;
     display: flex;
@@ -153,7 +149,7 @@ header {
     padding-right: 0;
 }
 
-.controls-auth button {
+.controls-auth .button-in {
     padding: 5px;
     cursor: pointer;
     font-size: 18px;
@@ -161,7 +157,7 @@ header {
     background-color: var(--primary-background);
 }
 
-.controls-auth a{
+.controls-auth .regist{
     text-decoration: none;
     color: black;
     display: block;
@@ -169,7 +165,7 @@ header {
     font-size: 18px;
 }
 
-.controls-auth a:last-child{
+.controls-auth .regist{
     border-left: 1px solid var(--primary-color-rgba);
     padding-right: 0;
 }
@@ -200,16 +196,6 @@ header {
     font-size: 22px;
 }
 
-.form-item input {
-    height: 30px;
-    width: 450px;
-    background-color: #F4F4F4;
-    border-radius: 8px;
-    border: none;
-    padding: 5px;
-    font-size: 16px;
-}
-
 .form-item button {
     padding: 10px;
     border-radius: 10px;
@@ -224,3 +210,50 @@ header {
     height: 24px;
     background: url('/assets/ikon/premium-icon.png') no-repeat;
 }
+
+.user-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-right: 0;
+    flex-direction: column;
+    width: 100px;
+
+}
+
+.user-auth:hover {
+    background-color: rgb(230, 231, 232);
+}
+
+.user {
+    display: block;
+    position: relative;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+.user-auth:hover .user-panel {
+    display: block;
+}
+
+.user-panel {
+    width: 120px;
+    position: absolute;
+    display: none;
+    list-style-type: none;
+    top: 90px;
+    right: 40px;
+    background-color: rgb(230, 231, 232);
+}
+
+.user-panel li{
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+.user-panel li:hover{
+    font-weight: 700;
+}
+
